@@ -4,6 +4,7 @@ http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.12-win64-VC11.zip
 http://windows.php.net/downloads/releases/php-5.5.25-Win32-VC11-x64.zip
 http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.24-winx64.zip
 
+
 2. 安装 Apache2.4
 (1)首先安装 VC11 vcredist_x64.exe，若干个下一步就OK
 (2)将 httpd-2.4.12-win64-VC11.zip 解压到 D:\WampServer\Apache24 这个目录下；
