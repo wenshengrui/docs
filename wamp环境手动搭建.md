@@ -1,21 +1,36 @@
 1. 下载相应的软件
+
 http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
+
 http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.12-win64-VC11.zip
+
 http://windows.php.net/downloads/releases/php-5.5.25-Win32-VC11-x64.zip
+
 http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.24-winx64.zip
 
 
 2. 安装 Apache2.4
+
 (1)首先安装 VC11 vcredist_x64.exe，若干个下一步就OK
+
 (2)将 httpd-2.4.12-win64-VC11.zip 解压到 D:\WampServer\Apache24 这个目录下；
+
 (3)修改配置文件 D:\WampServer\Apache24\conf\httpd.conf 
+
 修改 37行 ServerRoot "" => ServerRoot "D:\WampServer\Apache24"（这里输入的是你解压apache安装包的位置）
+
 修改 217行 #ServerName www.example.com:80 => ServerName www.example.com:80 (去掉前面的#)
+
 修改 241行 DocumentRoot "c:/Apache24/htdocs" => DocumentRoot "d:\www"
+
 修改 242行 <Directory "c:/Apache24/htdocs"> => <Directory "d:\www">
+
 修改 275行 DirectoryIndex index.html => DirectoryIndex index.html index.php index.htm
+
 修改 358行 ScriptAlias /cgi-bin/ "c:/Apache24/cgi-bin/"  => ScriptAlias /cgi-bin/ " D:\WampServer\Apache24\cgi-bin\ "
+
 修改 374行 <Directory "c:/Apache24/cgi-bin"> => <Directory "D:\WampServer\Apache24\cgi-bin">
+
 
 a.让apache支持php
 添加 117行后 LoadModule php5_module "D:\WampServer\Php5.5\php5apache2_4.dll" （请确认D:\WampServer\Php5.5中有php5apache2_4.dll）
