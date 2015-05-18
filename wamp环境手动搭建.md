@@ -58,15 +58,19 @@ c.保存 D:\WampServer\Apache24\conf\httpd.conf
 
 (3)修改配置文件 D:\WampServer\Php5.5\php.ini
 
-修改 721行 将 ;extension_dir = "ext"	去掉extension前面的分号 extension_dir = "ext" （去掉extension前面的分号）
+修改 721行 将 ;extension_dir = "ext"	去掉extension前面的分号 extension_dir = "ext" 
+
 修改 873行 将 ;extension=php_mbstring.dll	去掉extension前面的分号 extension=php_mbstring.dll 
+
 修改 875行 将 ;extension=php_mysql.dll		去掉extension前面的分号 extension=php_mysql.dll
+
 修改 876行 将 ;extension=php_mysqli.dll		去掉extension前面的分号 extension=php_mysqli.dll
 
 (4)启动服务
 net start apache2.2
 
 (5)测试Apache是否安装成功
+
 http://localhost/phpinfo.php
 
 4. 安装 Mysql5.6 
@@ -90,6 +94,7 @@ character-set-server = utf8
 
 
 #如果是服务器用的话，建议设大点。
+
 innodb_buffer_pool_size = 128M
 
 #基路径
@@ -102,6 +107,7 @@ datadir = D:\WampServer\Mysql5.6\data
 log_bin = D:\WampServer\Mysql5.6\log
 
 #如果不加这行，默认是监听127.0.0.0，加了后是监听局域网端口和外网端口。
+
 bind-address = 0.0.0.0
 
 #监听端口
