@@ -1,6 +1,7 @@
 wamp环境手动搭建 apache2.4+php5.5+mysql5.6 
 
 1. 下载相应的软件
+
 http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
 
 http://www.apachelounge.com/download/VC11/binaries/httpd-2.4.12-win64-VC11.zip
