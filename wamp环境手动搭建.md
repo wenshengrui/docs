@@ -17,19 +17,19 @@ http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.24-winx64.zip
 
 (3)修改配置文件 D:\WampServer\Apache24\conf\httpd.conf 
 
-修改 37行 ServerRoot "" => ServerRoot "D:\WampServer\Apache24"（这里输入的是你解压apache安装包的位置）
+修改 37行 ServerRoot "" 改为 ServerRoot "D:\WampServer\Apache24"（这里输入的是你解压apache安装包的位置）
 
-修改 217行 #ServerName www.example.com:80 => ServerName www.example.com:80 (去掉前面的#)
+修改 217行 #ServerName www.example.com:80 改为 ServerName www.example.com:80 (去掉前面的#)
 
-修改 241行 DocumentRoot "c:/Apache24/htdocs" => DocumentRoot "d:\www"
+修改 241行 DocumentRoot "c:/Apache24/htdocs" 改为 DocumentRoot "d:\www"
 
-修改 242行 <Directory "c:/Apache24/htdocs">=><Directory "d:\www">
+修改 242行 <Directory "c:/Apache24/htdocs"> 改为 <Directory "d:\www">
 
-修改 275行 DirectoryIndex index.html => DirectoryIndex index.html index.php index.htm
+修改 275行 DirectoryIndex index.html 改为 DirectoryIndex index.html index.php index.htm
 
-修改 358行 ScriptAlias /cgi-bin/ "c:/Apache24/cgi-bin/"=>ScriptAlias /cgi-bin/ " D:\WampServer\Apache24\cgi-bin\ "
+修改 358行 ScriptAlias /cgi-bin/ "c:/Apache24/cgi-bin/" 改为 ScriptAlias /cgi-bin/ " D:\WampServer\Apache24\cgi-bin\ "
 
-修改 374行 <Directory "c:/Apache24/cgi-bin"> => <Directory "D:\WampServer\Apache24\cgi-bin">
+修改 374行 <Directory "c:/Apache24/cgi-bin"> 改为 <Directory "D:\WampServer\Apache24\cgi-bin">
 
 
 a.让apache支持php
