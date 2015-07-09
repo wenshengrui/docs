@@ -1,4 +1,4 @@
-Centos6.5 上 lnmp + SVN 搭建
+		Centos6.5 上 lnmp + SVN 搭建
 
 1. 下载svn安装包
 [root@wiki tools] wget http://subversion.tigris.org/downloads/subversion-1.6.1.tar.gz
