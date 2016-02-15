@@ -1,0 +1,4 @@
+mysql 学习笔记
+
+mysql 授权
+grant select, insert, update, delete,create,alter on dbname.* to 'username'@'ip_address' identified by "password";
